@@ -1,0 +1,10 @@
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\bin\Debug\DSUR_2EP.exe.config
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\bin\Debug\DSUR_2EP.exe
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\bin\Debug\DSUR_2EP.pdb
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\obj\Debug\DSUR_2EP.csprojAssemblyReference.cache
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\obj\Debug\DSUR_2EP.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\obj\Debug\DSUR_2EP.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\obj\Debug\DSUR_2EP.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\obj\Debug\DSUR_2EP.exe
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\obj\Debug\DSUR_2EP.pdb
+C:\Users\USUARIO\Desktop\DSUR_00143619_2EP\DSUR_2EP\obj\Debug\DSUR_2EP.Properties.Login.resources
