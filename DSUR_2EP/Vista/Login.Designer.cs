@@ -93,7 +93,7 @@ namespace DSUR_2EP.Properties
             this.btnLogin.BackColor = System.Drawing.Color.Thistle;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 9F, System.Drawing.FontStyle.Bold,
+            this.btnLogin.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnLogin.Location = new System.Drawing.Point(562, 318);
             this.btnLogin.Name = "btnLogin";
