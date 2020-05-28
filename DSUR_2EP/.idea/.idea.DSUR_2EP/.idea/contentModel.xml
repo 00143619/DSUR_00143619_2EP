@@ -19,6 +19,7 @@
         <e p="BussinessDAO.cs" t="Include" />
         <e p="ConexionDB.cs" t="Include" />
         <e p="Frecuencia.cs" t="Include" />
+        <e p="InvalidPasswordException.cs" t="Include" />
         <e p="Product.cs" t="Include" />
         <e p="ProductDAO.cs" t="Include" />
       </e>

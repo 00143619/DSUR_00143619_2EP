@@ -24,9 +24,26 @@ namespace DSUR_2EP.Properties
             Appuser u = (Appuser) cmbUsername.SelectedItem;
             bool actualIgual = txtCurrent.Text.Equals(cmbUsername.SelectedValue.ToString());
             bool nuevaIgual = txtNew.Text.Equals(txtConfirm.Text);
-            bool nuevaValida = txtNew.Text.Length > 0;
+            bool nuevavalida = false;
+            try
+            {
+                if (txtNew.Text.Length < 3)
+                    throw new InvalidPasswordException();
+                else
+                {
+                    nuevavalida = true;
+                }
+                
+            }
+            catch (InvalidPasswordException)
+            {
+                MessageBox.Show("¡Ups! the password is too short!.", 
+                    "Hugo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
 
-            if (actualIgual && nuevaIgual && nuevaValida)
+
+            if (actualIgual && nuevaIgual && nuevavalida)
             {
                 try
                 {
