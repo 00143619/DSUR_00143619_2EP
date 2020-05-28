@@ -9,8 +9,8 @@
         public Product()
         {
             idProduct = 1;
-            idBusiness = 1;
             name = "";
+            idBusiness = 1;
         }
     }
 }

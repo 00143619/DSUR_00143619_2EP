@@ -22,6 +22,15 @@ namespace DSUR_2EP.Modelo
             DataTable dt = ConexionDB.ExecuteQuery(sql);
             return dt;
         }
+        public static DataTable ordertable()
+        {
+            string sql =String.Format("SELECT ao.idOrder, ao.createDate, pr.name, au.fullname, "+
+                                      "ad.address FROM APPORDER ao, ADDRESS ad, PRODUCT pr, APPUSER au "+
+                                      "WHERE ao.idProduct = pr.idProduct AND ao.idAddress = ad.idAddress " +
+                                      "AND ad.idUser = au.idUser ");
+            DataTable dt = ConexionDB.ExecuteQuery(sql);
+            return dt;
+        }
         public static List<AppOrder> getListaforUser(int idUser)
         {
             string sql =String.Format("SELECT ao.idOrder, ao.createDate, pr.name, au.fullname, "+

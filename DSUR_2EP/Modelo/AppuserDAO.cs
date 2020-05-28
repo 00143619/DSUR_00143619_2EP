@@ -33,6 +33,28 @@ namespace DSUR_2EP.Modelo
             
             ConexionDB.ExecuteNonQuery(sql);
         }
+        public static void CreateUser(string fullname, string username, string password, bool adm)
+        {
+            string sql = String.Format("INSERT INTO APPUSER(fullname, username, password, userType) " +
+                                       "VALUES('{0}', '{1}', '{2}', {3});", fullname, username, password, adm);
+            ConexionDB.ExecuteNonQuery(sql);
+        }
+        public static DataTable allusers()
+        {
+            string sql ="SELECT * FROM APPUSER";
+            DataTable dt = ConexionDB.ExecuteQuery(sql);
+            return dt;
+        }
+        public static void delateUser(int idUser)
+        {
+            string sql = String.Format(
+                "DELETE FROM APPUSER WHERE idUser ={0};",
+                idUser);
+            
+            ConexionDB.ExecuteNonQuery(sql);
+        }
+        
+        
         
     }
 }

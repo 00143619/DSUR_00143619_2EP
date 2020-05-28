@@ -27,10 +27,6 @@ namespace DSUR_2EP.Properties
             cmbPlace.ValueMember = "idBusiness";
             cmbPlace.DisplayMember = "name";
             cmbPlace.DataSource = BussinessDAO.getLista();
-            cmbProduct.DataSource = null;
-            cmbProduct.ValueMember = "idProduct";
-            cmbProduct.DisplayMember = "name";
-            cmbProduct.DataSource = ProductDAO.getLista(Convert.ToInt32(cmbPlace.SelectedValue.ToString()));
             cmbAddressOrder.DataSource = null;
             cmbAddressOrder.ValueMember = "idAddress";
             cmbAddressOrder.DisplayMember = "address";
@@ -39,7 +35,7 @@ namespace DSUR_2EP.Properties
             cmbOrder.ValueMember = "idOrder";
             cmbOrder.DisplayMember = "productname";
             cmbOrder.DataSource = AppOrderDAO.getListaforUser(user.idUser);
-            
+            cmbProduct.DataSource = null;
             actualizarDatagrid();
         }
         private void actualizarDatagrid()
@@ -72,17 +68,15 @@ namespace DSUR_2EP.Properties
 
         private void btnModifyAddress_Click(object sender, EventArgs e)
         {
-            Address_DAO.updateAddress(user.idUser, txtAddressModification.Text);
+            Address_DAO.updateAddress(Convert.ToInt32(cmbaddressModificate.SelectedValue.ToString()),
+                txtAddressModification.Text);
             MessageBox.Show("¡Address has been updated!",
                 "Hugo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             UpdateControls();
             
         }
 
-        private void User_Load(object sender, EventArgs e)
-        {
-            UpdateControls();
-        }
+        
 
         private void btnDelateAddress_Click(object sender, EventArgs e)
         {
@@ -110,6 +104,19 @@ namespace DSUR_2EP.Properties
           
             UpdateControls();
             
+        }
+
+        private void cmbPlace_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbProduct.DataSource = null;
+            cmbProduct.ValueMember = "idProduct";
+            cmbProduct.DisplayMember = "name";
+            cmbProduct.DataSource = ProductDAO.getLista(Convert.ToInt32(cmbPlace.SelectedValue.ToString()));
+        }
+
+        private void User_Load(object sender, EventArgs e)
+        {
+            UpdateControls();
         }
     }
 }

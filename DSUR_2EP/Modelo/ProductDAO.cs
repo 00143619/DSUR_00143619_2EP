@@ -20,9 +20,24 @@ namespace DSUR_2EP.Modelo
                 Product p = new Product();
                 p.idProduct = Convert.ToInt32(fila[0].ToString());
                 p.name = fila[1].ToString();
+                p.idBusiness = idBusiness;
                 lista.Add(p);
             }
             return lista;
+        }
+        public static void CreateProduct(int idBusiness, string name)
+        {
+            string sql = String.Format("INSERT INTO PRODUCT(idBusiness, name) " +
+                                       "VALUES({0}, '{1}');", idBusiness, name);
+            ConexionDB.ExecuteNonQuery(sql);
+        }
+        public static void delateproduct(int idProduct)
+        {
+            string sql = String.Format(
+                "DELETE FROM PRODUCT WHERE idProduct ={0};",
+                idProduct);
+            
+            ConexionDB.ExecuteNonQuery(sql);
         }
     }
 }

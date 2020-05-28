@@ -163,10 +163,10 @@ namespace DSUR_2EP.Properties
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(3, 45);
+            this.label7.Location = new System.Drawing.Point(24, 45);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 24);
+            this.label7.Size = new System.Drawing.Size(107, 24);
             this.label7.TabIndex = 13;
             this.label7.Text = "Address id: ";
             // 
@@ -287,10 +287,10 @@ namespace DSUR_2EP.Properties
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(826, 413);
+            this.tabPage2.Size = new System.Drawing.Size(826, 415);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Order";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -403,6 +403,7 @@ namespace DSUR_2EP.Properties
             this.cmbPlace.Name = "cmbPlace";
             this.cmbPlace.Size = new System.Drawing.Size(224, 23);
             this.cmbPlace.TabIndex = 16;
+            this.cmbPlace.SelectedIndexChanged += new System.EventHandler(this.cmbPlace_SelectedIndexChanged);
             // 
             // label9
             // 

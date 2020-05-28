@@ -97,6 +97,7 @@
         <Compile Include="Modelo\Business.cs" />
         <Compile Include="Modelo\BussinessDAO.cs" />
         <Compile Include="Modelo\ConexionDB.cs" />
+        <Compile Include="Modelo\Frecuencia.cs" />
         <Compile Include="Modelo\Product.cs" />
         <Compile Include="Modelo\ProductDAO.cs" />
         <Compile Include="Program.cs" />
@@ -168,9 +169,6 @@
     </ItemGroup>
     <ItemGroup>
         <None Include="App.config" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Controlador" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
